@@ -1,0 +1,70 @@
+{
+  "startup": {
+    "name": "StartupName",
+    "intro": {
+      "title": "Your intro text",
+      "button": "Button text"
+    },
+    "download": {
+      "title": "Title of the download section",
+      "subtitle": "Subtitle of the download section"
+    },
+    "features": {
+      "title": "Title for the features section",
+      "subtitle": "Subtitle for the features section",
+      "first": {
+        "icon": "icon-basket",
+        "title": "Feature title 1",
+        "description": "Feature description 1"
+      },
+      "second": {
+        "icon": "icon-globe",
+        "title": "Feature title 2",
+        "description": "Feature description 2"
+      },
+      "third": {
+        "icon": "icon-speedometer",
+        "title": "Feature title 3",
+        "description": "Feature description 3"
+      },
+      "fourth": {
+        "icon": "icon-wallet",
+        "title": "Feature title 4",
+        "description": "Feature description 4"
+      }
+    },
+    "cta": {
+      "title": "Title for the CTA section",
+      "button": "CTA button title"
+    },
+    "contact": {
+      "title": "Title for the contact section",
+      "first": {
+        "network": "twitter",
+        "url": "https://twitter.com"
+      },
+      "second": {
+        "network": "facebook",
+        "url": "https://facebook.com"
+      },
+      "third": {
+        "network": "linkedin",
+        "url": "https://linkedin.com"
+      }
+    },
+    "footer": {
+      "first": {
+        "name": "Privacy",
+        "url": "#"
+      },
+      "second": {
+        "name": "Terms",
+        "url": "#"
+      },
+      "third": {
+        "name": "FAQ",
+        "url": "#"
+      }
+    }
+  }
+}

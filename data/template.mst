@@ -1,0 +1,189 @@
+{{#main}}
+<div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">{{ name }}</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-5">{{ intro.title }}</h1>
+            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">{{ intro.button }}</a>
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                <div class="screen">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img src="img/demo-screen.png" class="img-fluid" alt=""dd4b39>
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="download bg-primary text-center" id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="section-heading">{{ download.title }}</h2>
+          <p>{{ download.subtitle }}</p>
+          <div class="badges">
+            <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+            <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2>{{ features.title }}</h2>
+        <p class="text-muted">{{ features.subtitle }}</p>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                <div class="screen">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img src="img/demo-screen.png" class="img-fluid" alt="">
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 my-auto">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="{{ features.first.icon }} text-primary"></i>
+                  <h3>{{ features.first.title }}</h3>
+                  <p class="text-muted">{{ features.first.description }}</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="{{ features.second.icon }} text-primary"></i>
+                  <h3>{{ features.second.title }}</h3>
+                  <p class="text-muted">{{ features.second.description }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="{{ features.third.icon }} text-primary"></i>
+                  <h3>{{ features.third.title }}</h3>
+                  <p class="text-muted">{{ features.third.description }}</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="{{ features.fourth.icon }} text-primary"></i>
+                  <h3>{{ features.fourth.title }}</h3>
+                  <p class="text-muted">{{ features.fourth.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <div class="cta-content">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col">
+            <h2>{{ cta.title }}</h2>
+            <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">{{ cta.button }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </section>
+
+  <section class="contact bg-primary" id="contact">
+    <div class="container">
+      <h2>{{ contact.title }}</h2>
+      <ul class="list-inline list-social">
+        <li class="list-inline-item social-twitter">
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-facebook">
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-linkedin">
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; {{ name }}</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="{{ footer.first.url }}">{{ footer.first.name }}</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="{{ footer.second.url }}">{{ footer.second.name }}</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="{{ footer.third.url }}">{{ footer.third.name }}</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+{{/main}}

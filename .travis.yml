@@ -1,0 +1,13 @@
+language:      node_js
+git:
+  depth: 3
+node_js:
+  - 11
+install: npm install
+script:
+  - gulp
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
