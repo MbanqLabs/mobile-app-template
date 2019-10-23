@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/MbanqLabs/mobile-app-template.svg?branch=master)](https://travis-ci.com/MbanqLabs/mobile-app-template)
+
 # mobile-app-template
 Static landing page template for the [Mbanq Labs](https://labs.mbanq.io)
 startups with mobile apps.
