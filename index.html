@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Charm by Capitao</title>
+  <title>Startup Name</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -42,9 +42,9 @@
     $(document).ready(function(){
       $.when($.ajax({url: "./data/template.mst", dataType: 'text'}),$.ajax({url: "./data/startup.json"}))
       .done(function(template, data) {
-        console.log(data);
+
         Mustache.parse(template[0]);
-        var rendered = Mustache.render(template[0], { main: data[0].startup });
+        var rendered = Mustache.render(template[0], data[0]);
         $("#app").html(rendered);
         // load other scripts that depend on the
         // page content

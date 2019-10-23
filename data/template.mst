@@ -67,11 +67,12 @@
     </div>
   </section>
 
+  {{#featuresSection}}
   <section class="features" id="features">
     <div class="container">
       <div class="section-heading text-center">
-        <h2>{{ features.title }}</h2>
-        <p class="text-muted">{{ features.subtitle }}</p>
+        <h2>{{ title }}</h2>
+        <p class="text-muted">{{ subtitle }}</p>
         <hr>
       </div>
       <div class="row">
@@ -93,42 +94,22 @@
         <div class="col-lg-8 my-auto">
           <div class="container-fluid">
             <div class="row">
+              {{#features}}
               <div class="col-lg-6">
                 <div class="feature-item">
-                  <i class="{{ features.first.icon }} text-primary"></i>
-                  <h3>{{ features.first.title }}</h3>
-                  <p class="text-muted">{{ features.first.description }}</p>
+                  <i class="{{ icon }} text-primary"></i>
+                  <h3>{{ title }}</h3>
+                  <p class="text-muted">{{ description }}</p>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="{{ features.second.icon }} text-primary"></i>
-                  <h3>{{ features.second.title }}</h3>
-                  <p class="text-muted">{{ features.second.description }}</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="{{ features.third.icon }} text-primary"></i>
-                  <h3>{{ features.third.title }}</h3>
-                  <p class="text-muted">{{ features.third.description }}</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="feature-item">
-                  <i class="{{ features.fourth.icon }} text-primary"></i>
-                  <h3>{{ features.fourth.title }}</h3>
-                  <p class="text-muted">{{ features.fourth.description }}</p>
-                </div>
-              </div>
+              {{/features}}
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  {{/featuresSection}}
 
   <section class="cta" id="cta">
     <div class="cta-content">
@@ -146,44 +127,37 @@
     <div class="overlay"></div>
   </section>
 
+  {{#contactSection}}
   <section class="contact bg-primary" id="contact">
     <div class="container">
-      <h2>{{ contact.title }}</h2>
+      <h2>{{ title }}</h2>
       <ul class="list-inline list-social">
-        <li class="list-inline-item social-twitter">
-          <a href="#">
-            <i class="fab fa-twitter"></i>
+        {{#links}}
+        <li class="list-inline-item social-{{ network }}">
+          <a href="{{ href }}">
+            <i class="fab fa-{{ network }}"></i>
           </a>
         </li>
-        <li class="list-inline-item social-facebook">
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </li>
-        <li class="list-inline-item social-linkedin">
-          <a href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
+        {{/links}}
       </ul>
     </div>
   </section>
+  {{/contactSection}}
 
+  {{#footerSection}}
   <footer>
     <div class="container">
       <p>&copy; {{ name }}</p>
       <ul class="list-inline">
+        {{#links}}
         <li class="list-inline-item">
-          <a href="{{ footer.first.url }}">{{ footer.first.name }}</a>
+          <a href="{{ url }}">{{ name }}</a>
         </li>
-        <li class="list-inline-item">
-          <a href="{{ footer.second.url }}">{{ footer.second.name }}</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="{{ footer.third.url }}">{{ footer.third.name }}</a>
-        </li>
+        {{/links}}
       </ul>
     </div>
   </footer>
+  {{/footerSection}}
+
 </div>
 {{/main}}
