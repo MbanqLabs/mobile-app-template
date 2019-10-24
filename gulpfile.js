@@ -74,7 +74,7 @@ function modules() {
     .pipe(gulp.dest('./vendor/simple-line-icons/css'));
   var mustache = gulp.src('./node_modules/mustache/*.js')
     .pipe(gulp.dest('./vendor/mustache'));
-  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, simpleLineIconsFonts, simpleLineIconsCSS);
+  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, simpleLineIconsFonts, simpleLineIconsCSS, mustache);
 }
 
 // CSS task
