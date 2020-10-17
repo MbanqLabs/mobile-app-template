@@ -3,7 +3,7 @@
     "name": "mobile-app-template",
     "version": "1.0.0",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "start": "gulp watch"
     },
     "description": "Static landing page template for the startups with mobile apps",
     "keywords": [
@@ -22,9 +22,9 @@
     },
     "license": "MIT",
     "author": {
-      "name": "Mbanq Labs",
-      "email": "labs@mbanq.com",
-      "url": "https://labs.mbanq.io"
+        "name": "Mbanq Labs",
+        "email": "labs@mbanq.com",
+        "url": "https://labs.mbanq.io"
     },
     "repository": {
         "type": "git",
@@ -33,13 +33,13 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.10.2",
         "bootstrap": "4.3.1",
-        "jquery": "3.4.1",
+        "jquery": "^3.5.1",
         "jquery.easing": "^1.4.1",
         "mustache": "^3.1.0",
         "simple-line-icons": "2.4.1"
     },
     "devDependencies": {
-        "browser-sync": "2.26.7",
+        "browser-sync": "^2.26.12",
         "del": "5.1.0",
         "gulp": "4.0.2",
         "gulp-autoprefixer": "7.0.0",

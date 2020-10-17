@@ -19,7 +19,7 @@ const pkg = require('./package.json');
 // Set the banner content
 const banner = ['/*!\n',
   ' * Mbanq Labs Startup Templates - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author.name %>(<%= pkg.author.url %>)\n',
+  ' * Copyright 2018-' + (new Date()).getFullYear(), ' <%= pkg.author.name %>(<%= pkg.author.url %>)\n',
   ' * Licensed under <%= pkg.license %> (https://github.com/MbanqLabs/<%= pkg.name %>/blob/master/LICENSE)\n',
   ' */\n',
   '\n'

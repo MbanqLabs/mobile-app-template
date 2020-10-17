@@ -1,6 +1,6 @@
 /*!
- * Mbanq Labs Templates - Mobile App v1.0.0 (https://github.com/MbanqLabs/mobile-app-template)
- * Copyright 2019-2019 [object Object]
+ * Mbanq Labs Startup Templates - Mobile App v1.0.0 (https://github.com/MbanqLabs/mobile-app-template)
+ * Copyright 2018-2020 Mbanq Labs(https://labs.mbanq.io)
  * Licensed under MIT (https://github.com/MbanqLabs/mobile-app-template/blob/master/LICENSE)
  */
 
